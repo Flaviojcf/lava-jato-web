@@ -10,6 +10,7 @@ export default function Input({type, text, name, placeholder}) {
                     name={name} 
                     id={name} 
                     placeholder={placeholder} 
+                   
                         />
         </div>
     )

@@ -1,24 +1,12 @@
 {
-  "employeers": [
+  "employees": [
     {
       "id": 1,
-      "E-mail": "teste1@lavajato.com.br",
-      "Senha" : "teste123"
-    },
-    {
-      "id": 2,
-      "E-mail": "teste2@lavajato.com.br",
-      "Senha" : "teste123"
-    },
-    {
-      "id": 3,
-      "E-mail": "teste3@lavajato.com.br",
-      "Senha" : "teste123"
-    },
-    {
-      "id": 4,
-      "E-mail": "teste4@lavajato.com.br",
-      "Senha" : "teste123"
+      "Nome":"Flavio Jose da Costa Filho",
+      "CPF":"70810007460",
+      "E-mail": "teste@lavajato.com.br",
+      "Senha" : "teste123",
+      "ConfirmarSenha":"teste123"
     }
   ]
 }

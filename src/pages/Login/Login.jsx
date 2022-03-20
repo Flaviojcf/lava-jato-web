@@ -3,8 +3,15 @@ import styles from ".//Login.module.scss"
 import img from "../../assets/log-in.svg"
 import Input from "../../components/Input/Input"
 import { Link } from "react-router-dom"
+import {useState,useEffect} from "react";
+
 
 export default function Login() {
+
+  
+
+
+
     return (
         <div className={styles.Container}>
             <div className={styles.Header}>
@@ -15,19 +22,21 @@ export default function Login() {
                 <p>Entre com suas informações de cadastro</p>
             </div>
             
-            <form>
+            <form >
 
            <Input
              type='email'
              text='E-mail'
              name='email'
              placeholder='Digite seu email'
+             
             />
             <Input 
                 type='password'
                 text='Senha'
                 name='name'
                 placeholder='Digite sua senha'
+               
             />
 
             <div className={styles.checkBox}>
@@ -36,9 +45,9 @@ export default function Login() {
                     <label htmlFor="checkBox">Lembre-me</label>
                 </div>
 
-                <Link to='/password'>
+    
                     <p>Esqueci minha senha</p>
-                </Link>
+             
             </div>
             <ButtonSubmit text='Entrar'/>
 

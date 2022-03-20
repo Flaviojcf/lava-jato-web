@@ -2,9 +2,45 @@ import ButtonSubmit from "../../components/ButtonSubmit/ButtonSubmit"
 import styles from ".//Register.module.scss"
 import { Link } from "react-router-dom"
 import Input from "../../components/Input/Input"
+import {useState,useEffect} from "react";
 
 
 export default function Register() {
+
+    function validate() {
+        return (
+            //validar tipos
+        )
+    }
+
+
+    function createAccount() {
+        const isValid = validate()
+            if (isValid == false){
+                return
+            }
+
+
+        fetch('http://localhost:4000/employees',{
+            method:'POST',
+            headers:{
+                'Content-type':'application/json',
+            },
+                body: JSON.stringify(),
+            
+        }).then((resp) => resp.json()).then((data) => {
+            console.log(data)
+            
+        }).catch((err) => console.log(err))
+    }
+
+
+  
+   
+  
+
+
+
     return (
         <div className={styles.Container}>
             <div className={styles.Header}>
@@ -17,13 +53,13 @@ export default function Register() {
             <form>
             <Input
              type='text'
-             text='Digite seu nome'
+             text='Nome'
              name='nome'
              placeholder='Digite seu nome completo'
             />
             <Input
              type='text'
-             text='Digite seu CPF'
+             text='CPF'
              name='CPF'
              placeholder='Digite seu CPF'
             />
