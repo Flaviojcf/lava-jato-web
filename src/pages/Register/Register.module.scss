@@ -1,0 +1,78 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 800px;
+    height: 690px;
+    background-color: #24221F;
+
+    gap: 40px;
+}
+.Header {
+    width: 334px;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+        margin-top: 4px;
+    }
+}
+
+.logo {
+    display: flex;
+    gap: 8px;
+  
+}
+
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin-top: 0;
+}
+
+.checkBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    input[type='checkbox'] {
+        cursor: pointer;
+    }
+
+    p {
+
+        color: #FFC632;
+    }
+}
+
+.checkInput {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    
+}
+
+.register {
+    color: #FFC632;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    a{
+        text-decoration: none;
+        color: #FFC632;
+    }
+}
+
+.btn {
+    display: flex;
+    gap: 20px;
+}
